@@ -1,0 +1,7 @@
+mkdir vjezba4
+cd vjezba4
+mkdir subfolder
+touch $HOSTNAME
+mv $HOSTNAME $USER
+mv $USER subfolder
+rm /mnt/d/faks/os1-test/vjezba4/subfolder/$USER

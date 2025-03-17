@@ -1,0 +1,9 @@
+mkdir vjezba2
+cd vjezba2
+touch file.txt
+cp file.txt file_copy.txt
+ls
+rm file.txt
+cd ..
+rmdir vjezba2 (ne mozemo obrisati direktorij vjezba2 s naredbom rmdir jer direktorij nije prazan. Trebamo koristiti drudu radebu npr. rm -r vjezba2 koja ce obrisati rekurzivno sadrzaj direktorij i sam direktorij.)
+rm -r vjezba2
