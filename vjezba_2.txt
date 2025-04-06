@@ -1,0 +1,21 @@
+# Zadatak 1
+mkdir -p vjezba2/data vjezba2/backup
+touch data/script.js data/style.css data/.env
+echo 'console.log("Hello, World!")' > data/script.js
+echo "body { background-color: #f0f0f0; }" > data/style.css 
+echo "VJEZBE=OS" > data/.env
+
+# Zadatak 2
+cp -rv data/. backup/
+cd data/
+ls -alS ../backup/
+
+# Zadatak 3
+rm -v ./*
+cp -nv ../backup/* ./
+ls -Alt1 
+
+# Zadatak 4
+ls -alS
+ls -lSh
+ls -Rt --color
