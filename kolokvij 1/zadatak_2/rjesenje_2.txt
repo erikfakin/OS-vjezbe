@@ -1,0 +1,23 @@
+mkdir web
+mkdir web/css web/js web/assets
+cd web/
+touch index.html about.html css/style.css js/script.js assets/img1.png assets/img2.jpg
+
+echo "console.log('Erik Fakin')" > js/script.js
+
+mkdir backup
+cp -n js/script.js backup/
+
+mv js/script.js js/script.encrypted.js
+echo $(head -c 16 /dev/random | xxd -p) > js/script.encrypted.js
+cat js/script.encrypted.js
+
+godina=1995
+echo $godina
+
+echo "GODINA=$godina">.env
+cat .env
+
+ls -als --color
+
+rm -f assets/* && echo "Sve datoteke su obrisane!"

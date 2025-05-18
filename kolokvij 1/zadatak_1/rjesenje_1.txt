@@ -1,0 +1,33 @@
+mkdir fipu_prva/1_sem fipu_prva/2_sem -p
+cd fipu_prva/1_sem
+touch dir.txt ldm.txt ms.txt oikt.txt opz.txt prog.txt
+cd ../2_sem
+touch bp1.txt gla.txt is.txt ma.txt os.txt psj.txt
+cd ..
+
+touch me.txt
+echo "ime: Erik" > me.txt
+echo "prezime: Fakin" >> me.txt
+echo "JMBAG: 0303121022" >> me.txt
+cat me.txt
+
+mkdir polozeno
+cp 1_sem/dir.txt ./polozeno/dir_polozeno.txt
+cp 1_sem/1dm.txt ./polozeno/ldm_polozeno.txt
+cp 1_sem/ms.txt ./polozeno/ms_polozeno.txt
+cp 1_sem/oikt.txt ./polozeno/oikt_polozeno.txt
+cp 1_sem/opz.txt ./polozeno/opz_polozeno.txt
+cp 1_sem/prog.txt ./polozeno/prog_polozeno.txt
+
+touch 1_sem/.salabahter_1.txt 2_sem/.salabahter_2.txt
+
+ls -lAR
+
+mkdir .salabahteri
+cd .salabahteri
+mv ../1_sem/.salabahter_1.txt ./
+mv /home/erik/fipu_prva/2_sem/.salabahter_2.txt /home/erik/fipu_prva/.salabahteri/
+
+cd ../1_sem/
+rm -iv ./*
+
